@@ -20,7 +20,9 @@ class StopwatchViewController: UIViewController, UITextFieldDelegate
     @IBOutlet weak var addRunnerButton: UIButton!
     @IBOutlet weak var addRunnerTextbox: UITextField!
     
+    // Runner fields
     var runners: [String] = []
+    var runnerCount = 0
     
     // MARK: - Timer
     var timer = Timer()
@@ -123,6 +125,8 @@ class StopwatchViewController: UIViewController, UITextFieldDelegate
     func addNewRunner() {
         runners.append(addRunnerTextbox.text!)
         let indexPath = IndexPath(row: runners.count - 1, section: 0)
+        let newRunner = Runner()
+        newRunner.runner(name: addRunnerTextbox.text!)
         
         runnerTableView.beginUpdates()
         runnerTableView.insertRows(at: [indexPath], with: .automatic)
@@ -143,7 +147,6 @@ extension StopwatchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "runnerCard", for: indexPath) as! RunnerCard
 
         cell.newRunner(name: runners[indexPath.row])
@@ -165,8 +168,11 @@ extension StopwatchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // when a cell is tapped, execute fuction from RunnerCard() class
+        // when a cell is tapped, execute fuction from Runner() class
         // that saves the lap into an array
+        // let selectedRunner = runners[indexPath.row]
+        
+        
     }
 
 }

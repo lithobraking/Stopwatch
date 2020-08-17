@@ -17,6 +17,7 @@
 		B03F22C8249EB30E00C9FA20 /* StopwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F22C7249EB30E00C9FA20 /* StopwatchUITests.swift */; };
 		B03F22D6249EB6CC00C9FA20 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F22D5249EB6CC00C9FA20 /* StopwatchViewController.swift */; };
 		B03F22D8249FE16F00C9FA20 /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F22D7249FE16F00C9FA20 /* Runner.swift */; };
+		B0FF8DF524E65988007224F5 /* RunnerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FF8DF424E65988007224F5 /* RunnerData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B03F22C9249EB30E00C9FA20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B03F22D5249EB6CC00C9FA20 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		B03F22D7249FE16F00C9FA20 /* Runner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
+		B0FF8DF424E65988007224F5 /* RunnerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				B03F22AE249EB30E00C9FA20 /* Assets.xcassets */,
 				B03F22B0249EB30E00C9FA20 /* LaunchScreen.storyboard */,
 				B03F22B3249EB30E00C9FA20 /* Info.plist */,
+				B0FF8DF424E65988007224F5 /* RunnerData.swift */,
 			);
 			path = Stopwatch;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				B03F22A6249EB30B00C9FA20 /* AppDelegate.swift in Sources */,
 				B03F22A8249EB30B00C9FA20 /* SceneDelegate.swift in Sources */,
 				B038181924DCDAFA00510BDB /* RunnerCard.swift in Sources */,
+				B0FF8DF524E65988007224F5 /* RunnerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +453,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.3;
+				MARKETING_VERSION = 0.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.newstar.Stopwatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -468,7 +472,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.3;
+				MARKETING_VERSION = 0.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.newstar.Stopwatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
